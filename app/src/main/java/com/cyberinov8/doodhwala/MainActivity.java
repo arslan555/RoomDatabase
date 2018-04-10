@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         List<Customer> customer = new ArrayList<Customer>();
-//        for (int i =0 ; i< 10 ; i++){
-//            Customer customer1 = new Customer("Arslan","abc","234234324",243423424);
-//            DataBase.getInstance(this).getCustomerDao().inseret(customer1);
-//        }
+        for (int i =0 ; i< 10 ; i++){
+            Customer customer1 = new Customer("Arslan","abc","234234324",243423424);
+            DataBase.getInstance(this).getCustomerDao().inseret(customer1);
+        }
         customer = DataBase.getInstance(this).getCustomerDao().getAllCustomer();
 
 

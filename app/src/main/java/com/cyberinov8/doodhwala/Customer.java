@@ -6,11 +6,11 @@ import android.arch.persistence.room.PrimaryKey;
 public class Customer {
 
     @PrimaryKey(autoGenerate = true)
-    public  int id ;
-    public  String name;
-    public String address;
-    public String cnic;
-    public int contactNumber;
+    private   int id ;
+    private   String name;
+    private String address;
+    private String cnic;
+    private int contactNumber;
     public Customer( String name, String address, String cnic, int contactNumber) {
 
         this.name = name;
